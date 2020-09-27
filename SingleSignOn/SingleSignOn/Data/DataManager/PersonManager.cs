@@ -21,6 +21,7 @@ namespace SingleSignOn.Data.DataManager
         public async Task<(IEnumerable<Person> Persons, Pagination Pagination)> GetPersonsAsync(UrlQueryParameters urlQueryParameters)
         {
             IEnumerable<Person> persons;
+
             int recordCount = default;
 
             ////For PosgreSql
